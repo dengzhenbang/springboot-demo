@@ -4,13 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-public class demo {
-    @Controller
-    public class index {
-        @RequestMapping("/index")
-        @ResponseBody
-        public String index(){
-            return "hello!";
-        }
+@Controller
+public class index {
+    @RequestMapping("/index")
+    @ResponseBody
+    public String index() {
+        return "hello world!" ;
     }
 }
+
